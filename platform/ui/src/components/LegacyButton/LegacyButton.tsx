@@ -88,7 +88,7 @@ const defaultVariantBackGroundColor = {
   contained: {
     default: 'bg-primary-light',
     primary: 'bg-primary-main',
-    primaryDark: 'bg-primary-dark',
+    primaryDark: 'bg-[#333333]',
     secondary: 'bg-secondary-light',
     white: 'bg-white',
     black: 'bg-black',

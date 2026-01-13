@@ -17,7 +17,7 @@ const NavBar = ({
   return (
     <div
       className={classnames(
-        'bg-secondary-dark z-20 border-black px-1',
+        'bg-[#333333] z-20 border-[#333333] px-1',
         isSticky && stickyClasses,
         !isSticky && notStickyClasses,
         className

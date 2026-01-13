@@ -91,7 +91,7 @@ function Header({
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="text-primary hover:bg-primary-dark mt-2 h-full w-full"
+                    className="text-primary hover:bg-[#424242] mt-2 h-full w-full"
                   >
                     <Icons.GearSettings />
                   </Button>

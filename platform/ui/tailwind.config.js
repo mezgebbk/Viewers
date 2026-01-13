@@ -29,49 +29,49 @@ module.exports = {
       },
 
       primary: {
-        light: '#5acce6',
-        main: '#0944b3',
-        dark: '#090c29',
-        active: '#348cfd',
+        light: '#EC407A',  // Pink accent
+        main: '#E91E63',   // Afya Vision pink
+        dark: '#C2185B',   // Darker pink
+        active: '#AD1457', // Active pink
       },
       inputfield: {
-        main: '#3a3f99',
-        disabled: '#2b166b',
-        focus: '#5acce6',
-        placeholder: '#39383f',
+        main: '#424242',
+        disabled: '#2d2d2d',
+        focus: '#E91E63',
+        placeholder: '#757575',
       },
 
       secondary: {
-        light: '#3a3f99',
-        main: '#2b166b',
-        dark: '#041c4a',
-        active: '#1f1f27',
+        light: '#616161',  // Medium gray
+        main: '#424242',   // Dark gray (Third Opinion style)
+        dark: '#212121',   // Very dark gray
+        active: '#303030', // Active gray
       },
 
       indigo: {
-        dark: '#0b1a42',
+        dark: '#1a1a1a',
       },
 
       common: {
-        bright: '#e1e1e1',
-        light: '#a19fad',
+        bright: '#e0e0e0',
+        light: '#bdbdbd',
         main: '#fff',
-        dark: '#726f7e',
-        active: '#2c3074',
+        dark: '#757575',
+        active: '#424242',
       },
       bkg: {
-        low: '#050615',
-        med: '#090C29',
-        full: '#041C4A',
+        low: '#0a0a0a',    // Almost black for deep background
+        med: '#1a1a1a',    // Dark charcoal
+        full: '#2d2d2d',   // Medium dark gray
       },
       info: {
         primary: '#FFFFFF',
-        secondary: '#7BB2CE',
+        secondary: '#E91E63',
       },
       actions: {
-        primary: '#348CFD',
-        highlight: '#5ACCE6',
-        hover: 'rgba(52, 140, 253, 0.2)',
+        primary: '#E91E63',   // Afya Vision pink
+        highlight: '#EC407A', // Lighter pink for highlight
+        hover: 'rgba(233, 30, 99, 0.15)', // Pink with transparency
       },
       customgreen: {
         100: '#05D97C',

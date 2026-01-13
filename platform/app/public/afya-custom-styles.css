@@ -1,0 +1,217 @@
+/* Afya Vision Custom Toolbar Styles */
+
+/* Toolbar button improvements */
+.ViewerMain button[class*="toolButton"],
+.ohif-toolbar button {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 6px !important;
+}
+
+.ViewerMain button[class*="toolButton"]:hover,
+.ohif-toolbar button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.25) !important;
+  background: rgba(66, 66, 66, 0.6) !important;
+}
+
+.ViewerMain button[class*="toolButton"][data-active="true"],
+.ohif-toolbar button[data-active="true"],
+.ViewerMain button[class*="toolButton"].active {
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.2), rgba(233, 30, 99, 0.3)) !important;
+  border: 1px solid rgba(233, 30, 99, 0.5) !important;
+  box-shadow: 0 0 16px rgba(233, 30, 99, 0.4), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Icon styling */
+.ViewerMain button[class*="toolButton"] svg,
+.ohif-toolbar button svg {
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
+  transition: all 0.15s ease;
+}
+
+.ViewerMain button[class*="toolButton"]:hover svg,
+.ohif-toolbar button:hover svg {
+  transform: scale(1.05);
+}
+
+.ViewerMain button[class*="toolButton"][data-active="true"] svg,
+.ViewerMain button[class*="toolButton"].active svg {
+  color: #E91E63 !important;
+  filter: drop-shadow(0 0 6px rgba(233, 30, 99, 0.8));
+}
+
+/* Toolbar button sizing */
+.ViewerMain button[class*="toolButton"],
+.ohif-toolbar button {
+  min-width: 42px !important;
+  min-height: 42px !important;
+  padding: 8px !important;
+}
+
+/* Tool groups visual separation */
+.ohif-toolbar [class*="ButtonGroup"] {
+  background: rgba(42, 42, 42, 0.4);
+  border-radius: 8px;
+  padding: 6px;
+  margin: 4px 0;
+  border: 1px solid rgba(66, 66, 66, 0.5);
+}
+
+/* Improved tooltips */
+div[role="tooltip"],
+.ohif-tooltip {
+  background: #2a2a2a !important;
+  border: 1px solid #555 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+/* Side panel tabs styling */
+.SidePanel button[role="tab"] {
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+
+.SidePanel button[role="tab"]:hover {
+  background: rgba(66, 66, 66, 0.6) !important;
+}
+
+.SidePanel button[role="tab"][data-state="active"],
+.SidePanel button[role="tab"][aria-selected="true"] {
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.2), rgba(233, 30, 99, 0.3)) !important;
+  border-bottom: 2px solid #E91E63 !important;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3) !important;
+}
+
+/* Header styling improvements */
+.ViewerHeader {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #333 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Study list hover effect */
+.study-row:hover {
+  background: rgba(66, 66, 66, 0.3) !important;
+  border-left: 3px solid #E91E63 !important;
+  transform: translateX(2px);
+  transition: all 0.2s ease;
+}
+
+/* Study List Table Improvements */
+.study-list-table,
+table[class*="StudyList"] {
+  border-collapse: separate !important;
+  border-spacing: 0 4px !important;
+}
+
+.study-list-table tbody tr,
+table[class*="StudyList"] tbody tr,
+[data-cy="study-row"] {
+  background: rgba(42, 42, 42, 0.6) !important;
+  border: 1px solid rgba(66, 66, 66, 0.8) !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  margin: 4px 0 !important;
+}
+
+.study-list-table tbody tr:hover,
+table[class*="StudyList"] tbody tr:hover,
+[data-cy="study-row"]:hover {
+  background: rgba(66, 66, 66, 0.8) !important;
+  border-color: rgba(233, 30, 99, 0.6) !important;
+  border-left: 3px solid #E91E63 !important;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.2) !important;
+}
+
+.study-list-table thead tr,
+table[class*="StudyList"] thead tr {
+  background: rgba(66, 66, 66, 0.4) !important;
+  border-bottom: 2px solid rgba(233, 30, 99, 0.3) !important;
+}
+
+.study-list-table td,
+.study-list-table th,
+table[class*="StudyList"] td,
+table[class*="StudyList"] th {
+  border-right: 1px solid rgba(66, 66, 66, 0.3) !important;
+  padding: 12px 16px !important;
+}
+
+.study-list-table td:last-child,
+.study-list-table th:last-child,
+table[class*="StudyList"] td:last-child,
+table[class*="StudyList"] th:last-child {
+  border-right: none !important;
+}
+
+/* Study List Container */
+[class*="StudyListTable"],
+[class*="study-browser"] {
+  background: rgba(26, 26, 26, 0.95) !important;
+  padding: 16px !important;
+  border-radius: 8px !important;
+}
+
+/* Study List Header Styling */
+[class*="StudyListFilter"],
+.study-list-filter {
+  background: rgba(42, 42, 42, 0.6) !important;
+  border: 1px solid rgba(66, 66, 66, 0.6) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+/* Measurement panel styling */
+.measurement-item {
+  transition: all 0.2s ease;
+}
+
+.measurement-item:hover {
+  background: rgba(66, 66, 66, 0.4) !important;
+  border-left: 3px solid #E91E63 !important;
+}
+
+/* Scrollbar styling for panels */
+.SidePanel::-webkit-scrollbar,
+.panel-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.SidePanel::-webkit-scrollbar-track,
+.panel-content::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.SidePanel::-webkit-scrollbar-thumb,
+.panel-content::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+  border: 2px solid #1a1a1a;
+}
+
+.SidePanel::-webkit-scrollbar-thumb:hover,
+.panel-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Loading states */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(233, 30, 99, 0.8);
+  }
+}
+
+.loading-indicator {
+  animation: pulse-glow 2s ease-in-out infinite;
+}

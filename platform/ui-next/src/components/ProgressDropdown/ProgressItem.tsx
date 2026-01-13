@@ -15,7 +15,7 @@ const ProgressItem = ({
   return (
     <div
       key={value}
-      className={'hover:bg-secondary-main flex cursor-pointer py-1 transition duration-1000'}
+      className={'hover:bg-[#3a3a3a] flex cursor-pointer py-1 transition duration-1000'}
       onClick={() => onSelect(option)}
     >
       <ProgressItemDetail option={option} />

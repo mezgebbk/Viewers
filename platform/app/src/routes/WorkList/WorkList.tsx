@@ -168,9 +168,9 @@ function WorkList({
 
   // Set body style
   useEffect(() => {
-    document.body.classList.add('bg-black');
+    document.body.classList.add('bg-[#2d2d2d]');
     return () => {
-      document.body.classList.remove('bg-black');
+      document.body.classList.remove('bg-[#2d2d2d]');
     };
   }, []);
 
@@ -552,7 +552,7 @@ function WorkList({
   );
 
   return (
-    <div className="flex h-screen flex-col bg-black">
+    <div className="flex h-screen flex-col bg-[#2d2d2d]">
       <Header
         isSticky
         menuOptions={menuOptions}
@@ -562,9 +562,102 @@ function WorkList({
       />
       <Onboarding />
       <InvestigationalUseDialog dialogConfiguration={appConfig?.investigationalUseDialog} />
+      
       <div className="flex h-full flex-col overflow-y-auto">
         <ScrollArea>
           <div className="flex grow flex-col">
+            {/* AfyaScan AI Detection Panel - Compact Premium Design */}
+            <div className="container relative mx-auto pt-2 pb-1.5">
+              {/* Ambient Glow Background */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-purple-500/5 to-blue-500/5 rounded-2xl blur-3xl"></div>
+              
+              <div className="relative bg-gradient-to-br from-[#0f1419] via-[#1a1f2e] to-[#0f1419] rounded-xl border border-white/[0.12] shadow-2xl overflow-hidden">
+                {/* Animated gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/[0.03] via-transparent to-blue-500/[0.03] opacity-50"></div>
+                
+                <div className="relative px-4 py-2.5">
+                  {/* Compact Header Section */}
+                  <div className="flex items-center justify-between mb-2.5">
+                    <div className="flex items-center space-x-2.5">
+                      {/* Compact AI Badge */}
+                      <div className="relative group">
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-purple-500 to-blue-500 rounded-xl blur opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                        <div className="relative bg-gradient-to-br from-primary/25 via-purple-500/15 to-blue-500/25 rounded-lg p-1.5 border border-primary/40 backdrop-blur-sm">
+                          <svg className="w-4 h-4 text-primary drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                          </svg>
+                        </div>
+                      </div>
+                      <div>
+                        <h2 className="text-sm font-bold bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent drop-shadow">
+                          AI Detection Engine
+                        </h2>
+                        <p className="text-[11px] text-white/50 font-medium">12 pathologies • Real-time analysis</p>
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-green-500/20 rounded-lg blur-sm"></div>
+                      <div className="relative flex items-center bg-gradient-to-r from-emerald-500/15 to-green-500/15 px-3 py-1 rounded-lg border border-emerald-400/30 backdrop-blur-sm">
+                        <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5 animate-pulse shadow-lg shadow-emerald-400/50"></div>
+                        <span className="text-[11px] font-bold text-emerald-300 drop-shadow">ACTIVE</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Compact Disease Grid - 6 columns */}
+                  <div className="grid grid-cols-6 gap-2">
+                    {[
+                      { name: 'Tuberculosis', short: 'TB', gradient: 'from-red-500 to-rose-600' },
+                      { name: 'Pneumonia', short: 'PNA', gradient: 'from-orange-500 to-amber-600' },
+                      { name: 'Pleural Effusion', short: 'PE', gradient: 'from-blue-500 to-cyan-600' },
+                      { name: 'Pneumothorax', short: 'PTX', gradient: 'from-yellow-500 to-orange-600' },
+                      { name: 'Cardiomegaly', short: 'CM', gradient: 'from-pink-500 to-rose-600' },
+                      { name: 'Consolidation', short: 'CON', gradient: 'from-purple-500 to-violet-600' },
+                      { name: 'Atelectasis', short: 'ATL', gradient: 'from-indigo-500 to-blue-600' },
+                      { name: 'Nodules/Mass', short: 'NOD', gradient: 'from-gray-400 to-slate-500' },
+                      { name: 'Pulm. Edema', short: 'PE', gradient: 'from-teal-500 to-cyan-600' },
+                      { name: 'Rib Fracture', short: 'RFx', gradient: 'from-red-400 to-pink-500' },
+                      { name: 'Diaphragm', short: 'DIA', gradient: 'from-green-500 to-emerald-600' },
+                      { name: 'Mediastinum', short: 'MED', gradient: 'from-violet-500 to-purple-600' }
+                    ].map((condition, idx) => (
+                      <div key={idx} className="group relative">
+                        {/* Glow effect on hover */}
+                        <div className={`absolute -inset-0.5 bg-gradient-to-r ${condition.gradient} rounded-lg blur opacity-0 group-hover:opacity-40 transition-opacity duration-300`}></div>
+                        
+                        {/* Compact Card */}
+                        <div className="relative bg-white/[0.03] hover:bg-white/[0.07] rounded-lg px-2 py-1.5 border border-white/[0.08] hover:border-white/25 transition-all duration-300 cursor-pointer backdrop-blur-sm">
+                          <div className="flex items-center space-x-1.5">
+                            {/* Compact Icon Badge */}
+                            <div className="flex-shrink-0">
+                              <div className={`relative w-6 h-6 rounded bg-gradient-to-br ${condition.gradient} p-[1px] shadow-lg`}>
+                                <div className="w-full h-full bg-[#0f1419] rounded flex items-center justify-center">
+                                  <span className={`text-[10px] font-bold bg-gradient-to-br ${condition.gradient} bg-clip-text text-transparent drop-shadow`}>
+                                    {condition.short}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            {/* Text */}
+                            <div className="flex-1 min-w-0">
+                              <p className="text-[11px] font-bold text-white group-hover:text-white transition-colors truncate drop-shadow">
+                                {condition.name}
+                              </p>
+                            </div>
+                            {/* Status Check - Smaller */}
+                            <div className="flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
+                              <svg className="w-3.5 h-3.5 text-emerald-400 drop-shadow-lg" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <StudyListFilter
               numOfStudies={pageNumber * resultsPerPage > 100 ? 101 : numOfStudies}
               filtersMeta={filtersMeta}

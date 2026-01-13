@@ -1,0 +1,33 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Neural network brain outline -->
+  <g transform="translate(10, 10)">
+    <!-- Brain outline -->
+    <path d="M 20 5 Q 25 2, 30 5 Q 35 8, 35 15 Q 35 22, 32 27 Q 35 32, 32 38 Q 28 42, 22 40 Q 18 38, 15 35 Q 12 32, 12 27 Q 8 22, 8 15 Q 8 8, 13 5 Q 15 3, 20 5 Z" 
+          fill="none" stroke="#E91E63" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Neural network nodes -->
+    <circle cx="15" cy="15" r="1.5" fill="#60D4F4"/>
+    <circle cx="22" cy="12" r="1.5" fill="#60D4F4"/>
+    <circle cx="28" cy="15" r="1.5" fill="#60D4F4"/>
+    <circle cx="20" cy="20" r="1.5" fill="#60D4F4"/>
+    <circle cx="25" cy="25" r="1.5" fill="#60D4F4"/>
+    <circle cx="18" cy="28" r="1.5" fill="#60D4F4"/>
+    <circle cx="15" cy="32" r="1.5" fill="#60D4F4"/>
+    <circle cx="28" cy="30" r="1.5" fill="#60D4F4"/>
+    
+    <!-- Connections -->
+    <line x1="15" y1="15" x2="22" y2="12" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+    <line x1="22" y1="12" x2="28" y2="15" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+    <line x1="15" y1="15" x2="20" y2="20" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+    <line x1="28" y1="15" x2="20" y2="20" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+    <line x1="20" y1="20" x2="25" y2="25" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+    <line x1="20" y1="20" x2="18" y2="28" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+    <line x1="25" y1="25" x2="28" y2="30" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+    <line x1="18" y1="28" x2="15" y2="32" stroke="#E91E63" stroke-width="0.5" opacity="0.4"/>
+  </g>
+  
+  <!-- AfyaScan text -->
+  <text x="55" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">
+    AfyaScan
+  </text>
+</svg>

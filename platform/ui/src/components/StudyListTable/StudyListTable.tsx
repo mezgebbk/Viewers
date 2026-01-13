@@ -5,7 +5,7 @@ import StudyListTableRow from './StudyListTableRow';
 
 const StudyListTable = ({ tableDataSource, querying }) => {
   return (
-    <div className="bg-black">
+    <div className="bg-[#2d2d2d]">
       <div className="container relative m-auto">
         <table className="w-full text-white">
           <tbody

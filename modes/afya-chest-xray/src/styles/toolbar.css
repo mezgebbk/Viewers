@@ -1,0 +1,115 @@
+/* Afya Vision Toolbar Button Styles */
+
+/* Improve toolbar button appearance */
+.ohif-toolbar button {
+  transition: all 0.2s ease-in-out;
+}
+
+.ohif-toolbar button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3);
+}
+
+.ohif-toolbar button[data-active='true'] {
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.15), rgba(233, 30, 99, 0.25));
+  border-color: #E91E63;
+  box-shadow: 0 0 12px rgba(233, 30, 99, 0.4);
+}
+
+/* Icon improvements */
+.ohif-toolbar svg {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Tool button groups */
+.ohif-toolbar [data-tool-section] {
+  background: rgba(66, 66, 66, 0.3);
+  border-radius: 8px;
+  padding: 4px;
+  margin: 4px 0;
+}
+
+/* Measurement tool styles */
+[data-tool='Length'] svg,
+[data-tool='Angle'] svg,
+[data-tool='ArrowAnnotate'] svg {
+  color: #60D4F4;
+}
+
+[data-tool='Length']:hover svg,
+[data-tool='Angle']:hover svg,
+[data-tool='ArrowAnnotate']:hover svg {
+  color: #8FE5FF;
+}
+
+/* Viewing tool styles */
+[data-tool='Zoom'] svg,
+[data-tool='WindowLevel'] svg,
+[data-tool='Pan'] svg {
+  color: #A8E6CF;
+}
+
+[data-tool='Zoom']:hover svg,
+[data-tool='WindowLevel']:hover svg,
+[data-tool='Pan']:hover svg {
+  color: #BBFFDD;
+}
+
+/* Manipulation tool styles */
+[data-tool='invert'] svg,
+[data-tool='rotate-right'] svg,
+[data-tool='flipHorizontal'] svg,
+[data-tool='Reset'] svg {
+  color: #FFD93D;
+}
+
+[data-tool='invert']:hover svg,
+[data-tool='rotate-right']:hover svg,
+[data-tool='flipHorizontal']:hover svg,
+[data-tool='Reset']:hover svg {
+  color: #FFF175;
+}
+
+/* Layout and Cine tool styles */
+[data-tool='Layout'] svg,
+[data-tool='Cine'] svg {
+  color: #E91E63;
+}
+
+[data-tool='Layout']:hover svg,
+[data-tool='Cine']:hover svg {
+  color: #FF4081;
+}
+
+/* Active state for all tools */
+button[data-active='true'] svg {
+  color: #E91E63;
+  filter: drop-shadow(0 0 4px rgba(233, 30, 99, 0.8));
+}
+
+/* Tooltips */
+.ohif-tooltip {
+  background: #2a2a2a !important;
+  border: 1px solid #424242 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  font-size: 13px !important;
+  padding: 6px 10px !important;
+}
+
+.ohif-tooltip::after {
+  border-top-color: #2a2a2a !important;
+}
+
+/* Button spacing and sizing */
+.ohif-toolbar button {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+/* Icon size consistency */
+.ohif-toolbar svg {
+  width: 20px;
+  height: 20px;
+}
