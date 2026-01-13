@@ -34,6 +34,8 @@ yarn-error.log
 sampledata/
 example/deps/
 docker/dcm4che/dcm4che-arc
+studies/
+testdata/
 
 # Cypress test results
 videos/
